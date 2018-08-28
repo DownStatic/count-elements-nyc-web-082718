@@ -7,8 +7,7 @@ def count_elements(array)
         count = count + 1
       end
     end
-    count_hash.keys << term
-    count_hash.values << count
+    count_hash[term] = count
   end
 end
  
