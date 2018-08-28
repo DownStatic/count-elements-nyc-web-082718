@@ -1,4 +1,5 @@
 def count_elements(array)
-  # code goes here
+  count_hash = {}
+  
 end
  
