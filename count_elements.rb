@@ -9,5 +9,6 @@ def count_elements(array)
     end
     count_hash[term] = count
   end
+  return count_hash
 end
  
