@@ -1,7 +1,14 @@
 def count_elements(array)
   count_hash = {}
-  unique = array.uniq
-  count_hash.keys = array.uniq
-  array.each
+  array.uniq.each do |term|
+    count = 0
+    array.each do |item|
+      if item == term
+        count = count + 1
+      end
+    end
+    count_hash.keys << term
+    count_hash.values << count
+  end
 end
  
